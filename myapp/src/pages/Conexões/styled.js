@@ -1,29 +1,6 @@
 import { StyleSheet } from "react-native";
 
-export default styles = StyleSheet.create({
-    main: {
-        width: "100%",
-        height: "100%",
-        display: 'flex',
-        alignItems: "center",
-        flexDirection: "column",
-    },
-    files: {
-        width: "100%",
-        height: "50%"
-    },
-    historic_files: {
-        width: "100%",
-        height: "50%"
-    },
-    text_files: {
-        color: 'black',
-        fontSize: 20
-    },
-    text_con: {
-        color: 'black',
-        fontSize: 20
-    },
+export default style = StyleSheet.create({
     item: {
         display: 'flex',
         flexDirection: 'row',

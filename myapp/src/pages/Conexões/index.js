@@ -1,10 +1,10 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, SafeAreaView, FlatList, Modal } from 'react-native';
 import style from './styled';
-import IconAnt from 'react-native-vector-icons/AntDesign';
+import IconMi from 'react-native-vector-icons/MaterialCommunityIcons';
 import { useNavigation } from '@react-navigation/native';
 
-export default function Files(){
+export default function Conexoes(){
     const [paths, setPaths] = React.useState([{name: 'Teste1'}, {name: 'Teste2'}, {name: 'Teste1'}, {name: 'Teste2'}, {name: 'Teste1'}, {name: 'Teste2'}, {name: 'Teste1'}, {name: 'Teste2'}, {name: 'Teste1'}, {name: 'Teste2'}, {name: 'Teste1'}, {name: 'Teste2'}, {name: 'Teste1'}, {name: 'Teste2'}, {name: 'Teste1'}, {name: 'Teste2'}]);    
     const navigate = useNavigation();
 
@@ -22,7 +22,7 @@ export default function Files(){
                         style={style.item}
                         onLongPress={() => {}}>
                             <View style={{display: "flex", flexDirection: "row", alignItems: "center"}}>
-                                <IconAnt name="file1" color="#000" size={25}></IconAnt>
+                                <IconMi name="transit-connection-variant" color="#000" size={25}></IconMi>
                                 <Text style={{color: "black"}}> {String(item.name).replace("/", "")}</Text>
                             </View>
                         </TouchableOpacity>
